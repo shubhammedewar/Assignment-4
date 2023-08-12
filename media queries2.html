@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: skyblue;
+        }
+        .container{
+            position: fixed;
+        }
+        .box{
+            height: 100px;
+            width: 200px;
+            border: 2px solid black;
+            margin: 5px;
+            color: #fff;
+            text-align: center;
+            /* position: fixed; */
+        }
+        /* .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: blue;
+        }
+        .box3{
+            background-color: brown;
+        }
+        .box4{
+            background-color: green;
+        } */
+        @media (min-width:600px) and (max-width:800px)
+        {
+            .box1{
+                background-color: red;
+                border: none;
+            }
+            .box2,.box3,.box4{
+                display: none;
+            }
+        }
+        @media (min-width:800px) and (max-width:1000px)
+        {
+            .box2{
+                background-color: blue;
+                border: none;
+                position: absolute;
+            }
+            .box1,.box3,.box4{
+                display: none;
+            }
+        }
+        @media (min-width:1000px) and (max-width:1200px)
+        {
+            .box3{
+                background-color: brown;
+                border: none;
+                position: absolute;
+            }
+            .box1,.box2,.box4{
+                display: none;
+            }
+        }
+        @media (min-width:1200px) and (max-width:1500px)
+        {
+            .box4{
+                background-color: green;
+                border: none;
+                position: absolute;
+            }
+            .box1,.box2,.box3{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="box box1">This is media query demo page size-600px</div>
+    <div class="box box2">This is media query demo page size-800px</div>
+    <div class="box box3">This is media query demo page size-1000px</div>
+    <div class="box box4">This is media query demo page size-1500px</div>
+   </div>
+</body>
+</html>

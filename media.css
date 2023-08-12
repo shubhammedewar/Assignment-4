@@ -1,0 +1,39 @@
+body{
+    background-color: yellow;
+}
+
+@media (min-width:600px)
+{
+    /* for mobiles */
+    body{
+        background-color: aqua;
+    }
+    div::after{
+        content: 'This is mobile';
+    }
+}
+@media (min-width:900px)
+{
+    /* for large screen mobile */
+    body{
+        background-color: red;
+    }
+    div::after{
+        content: 'This is big screen mobile and tab';
+    }
+}
+@media (min-width:1200px)
+{
+    body{
+        background-color: white;
+    }
+    div::after{
+        content: 'This is laptop';
+    }
+}
+div{
+    text-align: center;
+    font-size: x-large;
+    text-decoration: line-through;
+    text-transform: uppercase;
+}
